@@ -26,19 +26,19 @@
 
 /////////////////Guessing Game//////////////////
 
-function guessingGame() {
-  let num = prompt("Enter a number from 1-20");
+// function guessingGame() {
+//   let num = prompt("Enter a number from 1-20");
 
-  if (num == 10) {
-    return alert("You are correct.");
-  } else if (num <= 9) {
-    return alert("You're guess is too low.");
-  } else if (num > 10) {
-    return alert("You're guess is too high");
-  }
-}
+//   if (num == 10) {
+//     return alert("You are correct.");
+//   } else if (num <= 9) {
+//     return alert("You're guess is too low.");
+//   } else if (num > 10) {
+//     return alert("You're guess is too high");
+//   }
+// }
 
-guessingGame();
+// guessingGame();
 
 ////////////////////////////// Guessing Game Udemy/////////////////
 
@@ -49,7 +49,7 @@ guessingGame();
 
 // const targetNum = Math.floor(Math.random() * maximum) + 1;
 
-// let guess = parseInt(prompt("Enter your first guess!"));
+// let guess = prompt("Enter your first guess!");
 // let attempts = 1;
 
 // while (parseInt(guess) !== targetNum) {
@@ -57,14 +57,43 @@ guessingGame();
 //   attempts++;
 //   if (guess > targetNum) {
 //     guess = prompt("Too high! Enter a new guess:");
+//   } else if (guess < targetNum) {
+//     guess = prompt("Too low! Enter a new guess");
 //   } else {
-//     guess = "Too low! Enter a number";
+//     guess = prompt(`Your Guess is ${guess}, which is not higher or lower, please guess a number value`)
 //   }
 // }
 
 // if (guess === "q") {
 //   console.log("Ok, You Quit!");
 // } else {
-//   console.log('Congrats you win');
+//   console.log("Congrats you win");
 //   console.log(`You got it! It took you ${attempts} guesses`);
+//}
+
+/* Object iteration */
+
+const testScores = {
+  kenan: 80,
+  damon: 67,
+  kim: 89,
+  shawn: 91,
+  marlon: 72,
+  dwayne: 77,
+  nadia: 83,
+  elvira: 97,
+  diedre: 81,
+  vonnie: 60,
+};
+
+// for(let person in testScores) {
+//     console.log(`${person} scored ${testScores[person]}`);
 // }
+
+let total = 0;
+let scores = Object.values(testScores);
+for (let score of scores) {
+  total += score;
+}
+
+console.log(`The average is ${total / scores.length}`);
