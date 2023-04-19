@@ -1,0 +1,7 @@
+cd - Current Directory
+mkdir - make directory
+ls - list
+touch - to make files
+pwd - current location
+cd .. - go back one directory
+man - is manual
