@@ -6,10 +6,10 @@ function randomChoice(arr) {
   return arr[idx];
 }
 
-export default function ColorBox({ colors }) {
-  const [color, setColor] = useState("purple");
+function ColorBox({ colors }) {
+  const [color, setColor] = useState("blue");
   const changeColor = () => {
-    const randomColor = randomChoice(colors)
+    const randomColor = randomChoice(colors);
     setColor(randomColor);
   };
   return (
@@ -20,3 +20,5 @@ export default function ColorBox({ colors }) {
     ></div>
   );
 }
+
+export default ColorBox;

@@ -1,7 +1,7 @@
 // import Greeter from "./Greeter";
 // import Clicker from "./assets/Clicker";
 // import Counter from "./Counter";
-import ColorBox from "./ColorBox";
+import ColorBoxGrid from "./ColorBoxGrid";
 import "./App.css";
 
 const colors = [
@@ -24,7 +24,7 @@ export default function App() {
       <Greeter name="Mike" from="eli"/> */}
       {/* <Clicker /> */}
       {/* <Counter /> */}
-      <ColorBox  colors={colors}/>
+      <ColorBoxGrid />
     </>
   );
 }
