@@ -24,7 +24,7 @@ export default function App() {
       <Greeter name="Mike" from="eli"/> */}
       {/* <Clicker /> */}
       {/* <Counter /> */}
-      <ColorBoxGrid />
+      <ColorBoxGrid colors={colors}/>
     </>
   );
 }

@@ -7,7 +7,7 @@ function randomChoice(arr) {
 }
 
 function ColorBox({ colors }) {
-  const [color, setColor] = useState("blue");
+  const [color, setColor] = useState(randomChoice(colors));
   const changeColor = () => {
     const randomColor = randomChoice(colors);
     setColor(randomColor);
