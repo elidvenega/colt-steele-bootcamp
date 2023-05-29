@@ -1,6 +1,7 @@
-const jokes = document.querySelector(".jokes");
+const jokes = document.querySelector(".list-jokes");
 const button = document.querySelector(".button");
 
+// function to fetch dad jokes api
 async function dadJokes() {
   try {
     const config = {
@@ -16,6 +17,7 @@ async function dadJokes() {
   }
 }
 
+// function to create new li's
 async function newJoke() {
   const jokeText = await dadJokes();
   const newLI = document.createElement("LI");
