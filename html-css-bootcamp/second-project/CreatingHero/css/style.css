@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Mukta, sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.04rem;
+  max-width: 100%;
+  min-height: 100vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Bitter, serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  margin: 0;
+}
+h2 {
+  font-size: 3.5rem;
+  letter-spacing: -0.5px;
+}
+h3 {
+  font-size: 2.3rem;
+  letter-spacing: 0px;
+}
+h4 {
+  font-size: 2rem;
+  letter-spacing: 0.25px;
+}
+h5 {
+  font-size: 1.5rem;
+  letter-spacing: 0.25px;
+}
+h6 {
+  font-size: 1.3rem;
+  letter-spacing: 0.25px;
+}
+code {
+  color: #e95400;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: #863ae8;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1,
+.hero p {
+  width: 75%;
+  max-width: 55rem;
+  margin: 1rem 0;
+}
+
+/* .hero hr {
+  width: 50%;
+  margin: 2rem 0;
+} */
+
+.content {
+  max-width: 55rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.content h3 {
+  text-transform: capitalize;
+}
+
+.info {
+  text-align: center;
+  font-family: Bitter, serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+}
+
+.info span {
+  color: #e95400;
+}
+
+.headline {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0px;
+  margin: 2.5rem 0;
+  font-size: 1.1rem;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 0.8;
+  border-left: 2px solid #e95400;
+  padding-left: 1rem;
+  margin: 2rem 0 2rem 2rem;
+}
+
+.quote cite {
+  display: block;
+  font-weight: bold;
+  margin-left: 1.2rem;
+}
+
+footer {
+  background-color: #863ae8;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 55rem;
+  text-align: center;
+  padding: 1.8rem 0;
+}
+
+footer ul li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+footer li a {
+  text-decoration: none;
+  color: white;
+}
+
+footer li a:hover {
+  text-decoration: underline;
+}
