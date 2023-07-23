@@ -35,7 +35,6 @@ body {
 
 .navbar .right a:hover {
   text-decoration: underline;
-  color: black;
 }
 
 .navbar .right img {
@@ -55,6 +54,44 @@ body {
 
 .navbar .hamburger {
   display: none;
+}
+
+.navbar .hamburger:hover {
+  cursor: pointer;
+}
+
+.mobileNav {
+  width: 80px;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: -160px;
+  padding: 16px;
+  transition: transform 0.3s;
+}
+
+.mobileNav img {
+  width: 24px;
+  height: 24px;
+}
+
+.openDrawer {
+  transform: translateX(-160px);
+}
+
+.mobileNav a {
+  text-decoration: none;
+  color: black;
+  margin: 16px 0;
+}
+.mobileNav a:hover {
+  text-decoration: underline;
 }
 
 .project-grid {
@@ -161,21 +198,22 @@ body {
       "insta insta"
       "cup foam"
       "dimensional dimensional";
-    max-width: 100%;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .project-grid {
+    margin-top: 100px;
+  }
   .navbar {
-    padding: 16px 0;
+    padding: 16px 24px;
     box-sizing: border-box;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 3;
     background-color: #fff;
     width: 100%;
-    padding: 16px 24px;
   }
 
   .navbar .right {
@@ -189,6 +227,10 @@ body {
     align-items: center;
   }
 
+  .footer {
+    font-size: 14px;
+    padding: 32px;
+  }
   .project-grid {
     margin-top: 6rem;
     grid-template-areas:
