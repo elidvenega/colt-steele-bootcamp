@@ -2,11 +2,12 @@ import { useState } from "react";
 import "./colorbox.css";
 
 function randomChoice(arr) {
+  // Will get a random number
   const idx = Math.floor(Math.random() * arr.length);
   return arr[idx];
 }
 
-function ColorBox({ colors }) {
+export default function ColorBox({ colors }) {
   const [color, setColor] = useState(randomChoice(colors));
   const changeColor = () => {
     const randomColor = randomChoice(colors);
@@ -21,4 +22,4 @@ function ColorBox({ colors }) {
   );
 }
 
-export default ColorBox;
+

@@ -2,12 +2,16 @@ import { useState } from "react";
 
 export default function Counter() {
   const [num, setNum] = useState(0);
+  const add = () => setNum((num) => num + 1);
+  const minus = () => setNum((num) => num - 1);
+  const multiplyByTwo = () => setNum((num) => num * 2);
+
   return (
     <>
-      <button onClick={() => setNum(num + 1)}>Plus One</button>
+      <button onClick={add}>Plus One</button>
       <button onClick={() => setNum(0)}>Reset</button>
-      <button onClick={() => setNum(num - 1)}>Minus One</button>
-      <button onClick={() => setNum(num * 2)}>Times Two</button>
+      <button onClick={minus}>Minus One</button>
+      <button onClick={multiplyByTwo}>Times Two</button>
       <p>{num}</p>
     </>
   );

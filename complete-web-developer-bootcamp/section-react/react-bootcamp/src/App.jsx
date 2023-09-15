@@ -1,20 +1,21 @@
 // import Greeter from "./Greeter";
 // import Clicker from "./assets/Clicker";
-// import Counter from "./Counter";
-import ColorBoxGrid from "./ColorBoxGrid";
+ import Counter from "./Counter";
+//import ColorBoxGrid from "./ColorBoxGrid";
 import "./App.css";
 
+// Array to stored colors
 const colors = [
- "#06b6d4",
- "#818cf8",
- "#e879f9",
- "#881337",
- "#0d9488",
- "#34d399",
- "#064e3b",
- "#082f49",
- "#84cc16"
-]
+  "#06b6d4",
+  "#818cf8",
+  "#e879f9",
+  "#881337",
+  "#0d9488",
+  "#34d399",
+  "#064e3b",
+  "#082f49",
+  "#84cc16",
+];
 
 export default function App() {
   return (
@@ -23,20 +24,8 @@ export default function App() {
       <Greeter name="Ted" from="eli"/>
       <Greeter name="Mike" from="eli"/> */}
       {/* <Clicker /> */}
-      {/* <Counter /> */}
-      <ColorBoxGrid colors={colors}/>
+      <Counter />
+      {/* <ColorBoxGrid colors={colors}/> */}
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
