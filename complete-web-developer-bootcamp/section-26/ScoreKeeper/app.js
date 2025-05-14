@@ -1,3 +1,4 @@
+// You can use objects To hold player data
 const p1 = {
   score: 0,
   button: document.querySelector("#p1Button"),
