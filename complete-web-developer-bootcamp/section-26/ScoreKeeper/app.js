@@ -39,6 +39,8 @@ p2.button.addEventListener("click", () => {
   updateScores(p2, p1);
 });
 
+// I dont understand why this is not working
+// parseInt()is a built-in JavaScript function that converts a string into an integer (a whole number).
 winningScoreSelect.addEventListener("change", function () {
   winningScore = parseInt(this.value);
   reset();
