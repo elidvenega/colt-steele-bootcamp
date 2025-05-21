@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 export default function Counter() {
   const [count, setCount] = useState(0);
   const [name, setName] = useState("");
-
+  // useEffect is a hook that allows you to perform side effects in function components.
   useEffect(
     function myEffect() {
       console.log("MY EFFECT WAS CALLED!");
