@@ -3,6 +3,7 @@
  import Counter from "./Counter";
 //import ColorBoxGrid from "./ColorBoxGrid";
 import "./App.css";
+import ColorBox from "./ColorBox";
 
 // Array to stored colors
 const colors = [
@@ -26,6 +27,7 @@ export default function App() {
       {/* <Clicker /> */}
       <Counter />
       {/* <ColorBoxGrid colors={colors}/> */}
+      <ColorBox colors={colors} />
     </>
   );
 }
